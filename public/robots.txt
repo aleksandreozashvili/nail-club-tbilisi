@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nailclubtbilisi.ge/sitemap.xml
