@@ -92,7 +92,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="flex items-center gap-2 sm:hidden">
+        <div className="flex items-center gap-1 sm:hidden shrink-0">
           <LanguageSwitcher />
           <ThemeSwitcher />
           <button

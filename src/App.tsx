@@ -13,16 +13,15 @@ import { Portfolio } from './sections/Portfolio';
 import { Testimonials } from './sections/Testimonials';
 import { FAQ } from './sections/FAQ';
 import { ContactForm } from './sections/ContactForm';
-import { GoogleMapSection } from './sections/GoogleMapSection';
 import { Footer } from './sections/Footer';
 
 export const App: React.FC = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <div className="min-h-screen flex flex-col relative selection:bg-gold-500 selection:text-black">
+        <div className="min-h-screen flex flex-col relative overflow-x-hidden w-full max-w-full selection:bg-gold-500 selection:text-black">
           <Navbar />
-          <main className="flex-1">
+          <main className="flex-1 w-full overflow-hidden">
             <Hero />
             <Statistics />
             <Benefits />
@@ -33,7 +32,6 @@ export const App: React.FC = () => {
             <Testimonials />
             <FAQ />
             <ContactForm />
-            <GoogleMapSection />
           </main>
           <Footer />
           <FloatingButtons />
